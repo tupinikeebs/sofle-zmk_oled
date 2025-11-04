@@ -31,7 +31,7 @@ O Keymap Editor é especial porque basicamente automatiza as alterações que fo
 
 Para utilizar o KeymapEditor basta você logar com a sua conta GitHub e vincular o fork deste repositório.
 
-Assim que você realizar suas alterações basta clicar em "Save" no canto superior esquerdo que irá enviar as alteraçõees para o github ee acionará uma pipeline para buildar o projeto. Assim que o build finalizar um Artefato chamdado `firmeware.bin` ficará disponível para download.
+Assim que você realizar suas alterações basta clicar em "Save" no canto superior esquerdo que irá enviar as alteraçõees para o github e acionará uma pipeline para buildar o projeto. Assim que o build finalizar um Artefato chamado `firmeware.zip` ficará disponível para download.
 
 ![image](https://github.com/user-attachments/assets/c7c339a6-d595-4469-b02d-d556a2a272ed)
 
