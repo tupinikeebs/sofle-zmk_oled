@@ -16,8 +16,47 @@ Para prosseguir com a personalização e instalação do seu teclado sugerimos q
 
 É possível realizar a instalação e configuração do seu teclado por dois caminhos:
 
-1. [Configuração visual](#configuração-visual)
-2. [Configuração manual](#configuração-manual)
+1. [Configuração manual](#configuração-manual)
+2. [Configuração visual](#configuração-visual)
+
+
+### Configuração manual
+
+![image](https://github.com/user-attachments/assets/07776e9f-de8b-4a12-ba79-470632582f6d)
+
+Para a configuração manual sugerimos que siga os seguintes passos:
+
+1. Primeiro passo é forkar a config setup do ZMK, no user-setup -> https://zmk.dev/docs/user-setup
+2. Escolher a board do seu teclado, que na maioria das vezes será **Board:Nicenano V2**
+3. Copiar o layout base/default para o github.
+
+![image](https://github.com/user-attachments/assets/0527c640-3f06-4531-b0c0-1f64584daef7)
+
+É importante fazer essa configuração inicial, para que então você consiga alterar o keymap da melhor forma.
+
+![image](https://github.com/user-attachments/assets/3cc4374a-771b-4393-8859-d5db8fbc1b11)
+
+Para fazer as alterações pelo github, é só alterar e criar regras no [teclado].keymap de acordo com o que você, o USER, achar melhor.
+Atenção! Considere alterar direto pelo arquivo `[teclado].keymap` quando você já leu as docs do zmk e sabe exatamente o que está fazendo! Aqui, nunca vai ter algum tipo de limitação por GUI, apenas limitação pelo seu próprio código.
+
+## Instalação
+
+Para flashear o firmware do teclado novo basta seguir os seguintes passos:
+
+1. Conectar o cabo USB
+2. Dar dois cliques no botão de RST do teclado em menos de 1s
+
+![telegram-cloud-photo-size-1-5040021887542996513-y](https://github.com/user-attachments/assets/217fe770-6b37-4470-a5f0-d6640a593a94)
+
+Feito isso, uma pasta igual um pendrive irá aparecer com o nome de "Nicenano".
+Basta copiar o arquivo LEFT para o teclado esquerdo e copiar o arquivo RIGHT no teclado direito.
+
+![image](https://github.com/user-attachments/assets/fec189f3-8293-4407-89ad-9f4268b701dc)
+
+Nunca é preciso apagar nenhum arquivo dentro do Nicenano ( ou outra MCU ), sempre que atualizar só é necessário jogar um arquivo novo.
+
+| É comum que apareça um erro após após passar o novo firmware pra o teclado. Fiquem tranquilos não é um bug, é um feature do zmk : )
+
 
 ### Configuração visual
 
@@ -49,39 +88,3 @@ A vantagem do ZMK.STUDIO é que você quase nunca precisará mexer em código, c
 
 ---
 
-### Configuração manual
-
-![image](https://github.com/user-attachments/assets/07776e9f-de8b-4a12-ba79-470632582f6d)
-
-Para a configuração manual sugerimos que siga os seguintes passos:
-
-1. Primeiro passo é forkar a config setup do ZMK.
-2. Escolher a board do seu teclado, que na maioria das vezes será **Board:Nicenano V2**
-3. Copiar o layout base/default para o github.
-
-![image](https://github.com/user-attachments/assets/0527c640-3f06-4531-b0c0-1f64584daef7)
-
-É importante fazer essa configuração inicial, para que então você consiga alterar o keymap da melhor forma.
-
-![image](https://github.com/user-attachments/assets/3cc4374a-771b-4393-8859-d5db8fbc1b11)
-
-Para fazer as alterações pelo github, é só alterar e criar regras no [teclado].keymap de acordo com o que você, o USER, achar melhor.
-Atenção! Considere alterar direto pelo arquivo `[teclado].keymap` quando você já leu as docs do zmk e sabe exatamente o que está fazendo! Aqui, nunca vai ter algum tipo de limitação por GUI, apenas limitação pelo seu próprio código.
-
-## Instalação
-
-Para flashear o firmware do teclado novo basta seguir os seguintes passos:
-
-1. Conectar o cabo USB
-2. Dar dois cliques no botão de RST do teclado em menos de 1s
-
-![telegram-cloud-photo-size-1-5040021887542996513-y](https://github.com/user-attachments/assets/217fe770-6b37-4470-a5f0-d6640a593a94)
-
-Feito isso, uma pasta igual um pendrive irá aparecer com o nome de "Nicenano".
-Basta copiar o arquivo LEFT para o teclado esquerdo e copiar o arquivo RIGHT no teclado direito.
-
-![image](https://github.com/user-attachments/assets/fec189f3-8293-4407-89ad-9f4268b701dc)
-
-Nunca é preciso apagar nenhum arquivo dentro do Nicenano ( ou outra MCU ), sempre que atualizar só é necessário jogar um arquivo novo.
-
-| É comum que apareça um erro após após passar o novo firmware pra o teclado. Fiquem tranquilos não é um bug, é um feature do zmk : )
